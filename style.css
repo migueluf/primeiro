@@ -24,6 +24,8 @@ div img{
     max-width: 992px;
     margin: auto;
     width: 100%;
+    min-width: 320px;
+    padding: 10px 15px;
 }
 
 header{
@@ -106,6 +108,7 @@ header .menu{
 #quem-somos img{
     min-width: 420px;
 }
+
 
 .container-externo{
     background-color: #122a57;
@@ -204,6 +207,7 @@ header .menu{
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .item-plano ul li{
@@ -218,4 +222,59 @@ header .menu{
     height: 10px;
     background-color: #122a57;
     margin-right: 5px;
+}
+
+footer{
+    background-color: #122a57;
+    height: 70px;
+    display: flex;
+    align-items: center;
+
+}
+
+footer .footer{
+    justify-content: space-between;
+    color: #fff;
+}
+
+/*Mobile*/
+@media(max-width: 920px){
+    .flex-container{
+        flex-direction: column;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+    .apesentacao .texto-apresentacao{
+        width: 100%;
+    }
+
+    #quem-somos{
+        flex-direction: column-reverse;
+    }
+
+    #quem-somos img{
+        min-width: 320px;
+        margin: auto;
+    }
+
+    .list-serviços{
+        flex-direction: column;
+    }
+
+    .item-servico img{
+        width: 50%;
+        margin: auto;
+    }
+
+    .list-planos{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .list-planos .item-plano{
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+    }
 }
